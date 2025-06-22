@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Sujan Rimal</title>
+    <meta name="description" content="The story, journey, and experience of Sujan Rimal, an electrical engineer from Nepal." />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+    <link href="/dist/style.css" rel="stylesheet" />
+    <style>
+      /* Page-specific styles */
+      .timeline { position: relative; padding-left: 30px; border-left: 2px solid theme('colors.cyan.400' / 0.3); }
+      .timeline-item::before { content: ''; position: absolute; left: -12px; top: 5px; width: 22px; height: 22px; background-color: #00000a; border-radius: 50%; border: 3px solid theme('colors.cyan.400'); }
+    </style>
+</head>
+<body>
+    <!-- Background Effects -->
+    <div class="aurora-background"><div></div><div></div><div></div></div>
+    <div id="mouse-glow"></div>
+
+    <!-- Navigation -->
+    <nav class="p-4 flex justify-between items-center border-b border-white/10 bg-gray-950/50 backdrop-blur-lg sticky top-0 z-50 h-16">
+        <a href="/" class="text-2xl font-extrabold text-cyan-400">⚡ Sujan Rimal</a>
+        <div class="md:hidden">
+            <button id="hamburger-btn" class="text-white focus:outline-none z-50 relative">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+            </button>
+        </div>
+        <ul class="hidden md:flex gap-6 text-sm font-medium">
+            <li><a href="/" class="hover:text-cyan-300 transition-colors">Home</a></li>
+            <li><a href="/about/" class="text-cyan-400 font-bold">About</a></li>
+            <li><a href="/skill/" class="hover:text-cyan-300 transition-colors">Skills</a></li>
+            <li><a href="/project/" class="hover:text-cyan-300 transition-colors">Projects</a></li>
+            <li><a href="/survey/" class="hover:text-cyan-300 transition-colors">Survey</a></li>
+            <li><a href="/blog/" class="hover:text-cyan-300 transition-colors">Blog</a></li>
+            <li><a href="/contact/" class="hover:text-cyan-300 transition-colors">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden fixed inset-0 bg-black/90 backdrop-blur-md z-40 md:hidden">
+        <ul class="flex flex-col items-center justify-center h-full gap-8 text-xl font-medium">
+            <li><a href="/" class="mobile-link">Home</a></li>
+            <li><a href="/about/" class="mobile-link">About</a></li>
+            <li><a href="/skill/" class="mobile-link">Skills</a></li>
+            <li><a href="/project/" class="mobile-link">Projects</a></li>
+            <li><a href="/survey/" class="mobile-link">Survey</a></li>
+            <li><a href="/blog/" class="mobile-link">Blog</a></li>
+            <li><a href="/contact/" class="mobile-link">Contact</a></li>
+        </ul>
+    </div>
+    
+    <main class="max-w-5xl mx-auto px-6 py-24">
+      <div class="animate-on-scroll text-center">
+        <h1 class="text-5xl font-extrabold text-cyan-400 mb-4">My Journey</h1>
+        <p class="text-lg text-gray-300">From a curious student to a hands-on engineer.</p>
+      </div>
+
+      <section class="mt-20">
+        <div class="grid md:grid-cols-5 gap-12 items-center">
+          <div class="md:col-span-2 animate-on-scroll">
+            <img src="/assets/images/sujan-photo.jpg" alt="Sujan Rimal" class="rounded-lg shadow-2xl w-full border-4 border-slate-700">
+          </div>
+          <div class="md:col-span-3 animate-on-scroll" style="animation-delay: 0.2s;">
+            <h2 class="text-3xl font-bold text-white mb-4">Hello! I'm Sujan Rimal.</h2>
+            <div class="prose prose-lg prose-invert text-gray-300 max-w-none prose-strong:text-white">
+              <p>As a graduate Electrical Engineer, my passion lies at the intersection of traditional power systems and modern technology. I'm driven to create sustainable, efficient, and intelligent electrical solutions that can shape a better future.</p>
+              <p>My approach blends deep technical knowledge with a constant desire for innovation. I thrive on solving complex problems and collaborating with diverse teams of engineers and technicians to bring ambitious projects to life.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-24 animate-on-scroll">
+        <h2 class="text-4xl font-bold text-cyan-400 mb-12 text-center">Experience Timeline</h2>
+        <div class="timeline max-w-2xl mx-auto">
+          <div class="timeline-item relative pb-8">
+            <h3 class="text-xl font-bold text-white">Junior Electrical Engineer</h3>
+            <p class="text-cyan-300 text-sm mb-2">Satya Meditech Solution</p>
+            <p class="text-gray-400">Currently serving as a Junior Service Engineer, diagnosing and repairing complex electrical issues on-site. Gaining invaluable hands-on experience with PLCs, industrial motors, advanced control systems, and heavy machinery, ensuring minimal downtime and optimal performance for clients.</p>
+          </div>
+          <div class="timeline-item relative pb-8">
+            <h3 class="text-xl font-bold text-white">Bachelor of Engineering in Electrical Engineering</h3>
+            <p class="text-cyan-300 text-sm mb-2">University Name</p>
+            <p class="text-gray-400">Graduated with a focus on Power Systems and Renewable Energy. My final year project on smart grid efficiency sparked my passion for automation and intelligent energy management.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="text-center py-8 text-gray-500 text-sm mt-16 border-t border-white/10">
+        <p>© <span id="year"></span> Sujan Rimal | All rights reserved.</p>
+        <p>Built with Passion & Code</p>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>

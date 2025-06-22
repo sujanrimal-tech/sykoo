@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Outfit', sans-serif;
+    scroll-behavior: smooth;
+    background-color: #00000a;
+    color: theme('colors.gray.200');
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  /* This is where we put your unique, reusable custom styles */
+  .aurora-background {
+    position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -20; filter: blur(100px); -webkit-filter: blur(100px);
+  }
+  .aurora-blob {
+    position: absolute; border-radius: 50%; mix-blend-mode: screen;
+  }
+  .aurora-blob:nth-child(1) { width: 500px; height: 500px; background: rgba(0, 229, 255, 0.4); animation: moveBlob1 20s infinite alternate ease-in-out; }
+  .aurora-blob:nth-child(2) { width: 600px; height: 600px; background: rgba(0, 85, 255, 0.3); animation: moveBlob2 25s infinite alternate ease-in-out; }
+  .aurora-blob:nth-child(3) { width: 450px; height: 450px; background: rgba(192, 0, 255, 0.35); animation: moveBlob3 18s infinite alternate ease-in-out; }
+  
+  #mouse-glow {
+    position: fixed; width: 600px; height: 600px; background: radial-gradient(circle, rgba(255, 255, 255, 0.04) 0%, transparent 60%); border-radius: 50%; pointer-events: none; transform: translate(-50%, -50%); transition: transform 0.1s ease-out; z-index: -10;
+  }
+
+  .orbital-ring {
+    position: absolute; border-radius: 50%; border-style: solid; animation: rotate 40s linear infinite;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar { width: 8px; }
+  ::-webkit-scrollbar-track { background: #00000a; }
+  ::-webkit-scrollbar-thumb { background: linear-gradient(#00e5ff, #ff00c1); border-radius: 8px; }
+}
+
+/* Animations that were in your original HTML <style> block */
+@keyframes moveBlob1 { from { transform: translate(10vw, -10vh) rotate(-90deg); } to { transform: translate(70vw, 50vh) rotate(90deg); } }
+@keyframes moveBlob2 { from { transform: translate(80vw, 10vh) rotate(45deg); } to { transform: translate(10vw, 80vh) rotate(-45deg); } }
+@keyframes moveBlob3 { from { transform: translate(50vw, 80vh) rotate(0deg); } to { transform: translate(-10vw, -20vh) rotate(180deg); } }
+@keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Sujan Rimal</title>
+    <meta name="description" content="Get in touch with Sujan Rimal for collaborations or inquiries." />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+    <link href="/dist/style.css" rel="stylesheet" />
+    <style>
+      .perspective { perspective: 1000px; }
+      .card-inner { transform-style: preserve-3d; transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1); }
+      .card-inner.is-flipped { transform: rotateY(180deg); }
+      .card-face { backface-visibility: hidden; }
+    </style>
+</head>
+<body>
+    <!-- Background Effects -->
+    <div class="aurora-background"><div></div><div></div><div></div></div>
+    <div id="mouse-glow"></div>
+
+    <!-- Navigation -->
+    <nav class="p-4 flex justify-between items-center border-b border-white/10 bg-gray-950/50 backdrop-blur-lg sticky top-0 z-50 h-16">
+        <a href="/" class="text-2xl font-extrabold text-cyan-400">⚡ Sujan Rimal</a>
+        <div class="md:hidden">
+            <button id="hamburger-btn" class="text-white focus:outline-none z-50 relative">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+            </button>
+        </div>
+        <ul class="hidden md:flex gap-6 text-sm font-medium">
+            <li><a href="/" class="hover:text-cyan-300 transition-colors">Home</a></li>
+            <li><a href="/about/" class="hover:text-cyan-300 transition-colors">About</a></li>
+            <li><a href="/skill/" class="hover:text-cyan-300 transition-colors">Skills</a></li>
+            <li><a href="/project/" class="hover:text-cyan-300 transition-colors">Projects</a></li>
+            <li><a href="/survey/" class="hover:text-cyan-300 transition-colors">Survey</a></li>
+            <li><a href="/blog/" class="hover:text-cyan-300 transition-colors">Blog</a></li>
+            <li><a href="/contact/" class="text-cyan-400 font-bold">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden fixed inset-0 bg-black/90 backdrop-blur-md z-40 md:hidden">
+        <ul class="flex flex-col items-center justify-center h-full gap-8 text-xl font-medium">
+            <li><a href="/" class="mobile-link">Home</a></li>
+            <li><a href="/about/" class="mobile-link">About</a></li>
+            <li><a href="/skill/" class="mobile-link">Skills</a></li>
+            <li><a href="/project/" class="mobile-link">Projects</a></li>
+            <li><a href="/survey/" class="mobile-link">Survey</a></li>
+            <li><a href="/blog/" class="mobile-link">Blog</a></li>
+            <li><a href="/contact/" class="mobile-link">Contact</a></li>
+        </ul>
+    </div>
+    
+    <main class="max-w-4xl mx-auto px-6 py-24">
+        <div class="animate-on-scroll text-center">
+            <h1 class="text-5xl font-extrabold text-cyan-400 mb-4">Let's Connect</h1>
+            <p class="text-lg text-gray-300">Have a project in mind or just want to talk about tech? Reach out!</p>
+        </div>
+
+        <section class="mt-20 text-center animate-on-scroll">
+            <h2 class="text-2xl font-semibold text-white mb-4">Direct Contact</h2>
+            <div class="w-80 mx-auto perspective">
+                <div id="contact-card" class="relative w-full h-32 cursor-pointer">
+                    <div class="card-inner w-full h-full">
+                        <!-- Front Face -->
+                        <div class="card-face absolute w-full h-full bg-slate-800 rounded-xl flex flex-col items-center justify-center text-lg font-semibold border border-slate-600">
+                            <span class="text-3xl mb-2">📧</span>
+                            <span>rimalsujan5@gmail.com</span>
+                        </div>
+                        <!-- Back Face -->
+                        <div class="card-face absolute w-full h-full bg-cyan-600 text-black rounded-xl flex flex-col items-center justify-center text-lg font-semibold" style="transform: rotateY(180deg);">
+                            <span class="text-3xl mb-2">📞</span>
+                            <span>+977-9845645446</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-400 mt-2">Click the card to flip</p>
+            </div>
+        </section>
+        
+        <section class="mt-20 animate-on-scroll">
+            <h2 class="text-2xl font-semibold text-white mb-6 text-center">Or Send a Message</h2>
+            <div class="max-w-2xl mx-auto">
+                <div class="rounded-lg overflow-hidden border border-white/10 backdrop-blur-sm">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfUGcJ2CjIvppK2bI-zIq1rzSsWt2hg2sMQdTOY_sUXrfisUg/viewform?embedded=true" width="100%" height="821" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="text-center py-8 text-gray-500 text-sm mt-16 border-t border-white/10">
+        <p>© <span id="year"></span> Sujan Rimal | All rights reserved.</p>
+        <p>Built with Passion & Code</p>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>

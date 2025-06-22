@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | Sujan Rimal</title>
+    <meta name="description" content="Thoughts and articles on electrical engineering, technology, and career by Sujan Rimal." />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+    <link href="/dist/style.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Background Effects -->
+    <div class="aurora-background"><div></div><div></div><div></div></div>
+    <div id="mouse-glow"></div>
+
+    <!-- Navigation -->
+    <nav class="p-4 flex justify-between items-center border-b border-white/10 bg-gray-950/50 backdrop-blur-lg sticky top-0 z-50 h-16">
+        <a href="/" class="text-2xl font-extrabold text-cyan-400">⚡ Sujan Rimal</a>
+        <div class="md:hidden">
+            <button id="hamburger-btn" class="text-white focus:outline-none z-50 relative">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+            </button>
+        </div>
+        <ul class="hidden md:flex gap-6 text-sm font-medium">
+            <li><a href="/" class="hover:text-cyan-300 transition-colors">Home</a></li>
+            <li><a href="/about/" class="hover:text-cyan-300 transition-colors">About</a></li>
+            <li><a href="/skill/" class="hover:text-cyan-300 transition-colors">Skills</a></li>
+            <li><a href="/project/" class="hover:text-cyan-300 transition-colors">Projects</a></li>
+            <li><a href="/survey/" class="hover:text-cyan-300 transition-colors">Survey</a></li>
+            <li><a href="/blog/" class="text-cyan-400 font-bold">Blog</a></li>
+            <li><a href="/contact/" class="hover:text-cyan-300 transition-colors">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden fixed inset-0 bg-black/90 backdrop-blur-md z-40 md:hidden">
+        <ul class="flex flex-col items-center justify-center h-full gap-8 text-xl font-medium">
+            <li><a href="/" class="mobile-link">Home</a></li>
+            <li><a href="/about/" class="mobile-link">About</a></li>
+            <li><a href="/skill/" class="mobile-link">Skills</a></li>
+            <li><a href="/project/" class="mobile-link">Projects</a></li>
+            <li><a href="/survey/" class="mobile-link">Survey</a></li>
+            <li><a href="/blog/" class="mobile-link">Blog</a></li>
+            <li><a href="/contact/" class="mobile-link">Contact</a></li>
+        </ul>
+    </div>
+    
+    <main class="max-w-4xl mx-auto px-6 py-24">
+        <div class="animate-on-scroll text-center">
+            <h1 class="text-5xl font-extrabold text-cyan-400 mb-4">From the Field Notes</h1>
+            <p class="text-lg text-gray-300">Insights on engineering, technology, and culture.</p>
+        </div>
+
+        <section class="mt-20 space-y-12">
+            <!-- Blog Post Summary 1 -->
+            <article class="animate-on-scroll group">
+              <p class="text-sm text-gray-400 mb-1">May 2025</p>
+              <h2 class="text-3xl font-bold text-white group-hover:text-cyan-300 transition-colors"><a href="#">⚡ My First Project: Lessons from Building a Smart Energy Monitor</a></h2>
+              <p class="text-gray-300 mt-2">Diving into my experience building a smart energy monitor with Arduino. A story about bridging theory and practice, and the unexpected challenges of real-world embedded systems.</p>
+              <a href="#" class="mt-4 inline-block font-semibold text-cyan-400 group-hover:text-white transition-colors">Read Full Story →</a>
+            </article>
+
+            <!-- Blog Post Summary 2 -->
+            <article class="animate-on-scroll group">
+              <p class="text-sm text-gray-400 mb-1">April 2025</p>
+              <h2 class="text-3xl font-bold text-white group-hover:text-cyan-300 transition-colors"><a href="#">🔌 Demystifying SCADA: The Brains of Industrial Automation</a></h2>
+              <p class="text-gray-300 mt-2">A look into what SCADA systems are and why they are the backbone of modern industrial control. Exploring how data acquisition and remote control work in harmony to manage vast electrical networks.</p>
+              <a href="#" class="mt-4 inline-block font-semibold text-cyan-400 group-hover:text-white transition-colors">Read Full Story →</a>
+            </article>
+
+            <!-- Blog Post Summary 3 -->
+            <article class="animate-on-scroll group">
+              <p class="text-sm text-gray-400 mb-1">March 2025</p>
+              <h2 class="text-3xl font-bold text-white group-hover:text-cyan-300 transition-colors"><a href="#">🌱 Why Net Metering is a Game-Changer for Renewable Energy</a></h2>
+              <p class="text-gray-300 mt-2">Exploring how simple policies like net metering and technologies like smart inverters are empowering homeowners and revolutionizing household energy independence with solar power.</p>
+              <a href="#" class="mt-4 inline-block font-semibold text-cyan-400 group-hover:text-white transition-colors">Read Full Story →</a>
+            </article>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="text-center py-8 text-gray-500 text-sm mt-16 border-t border-white/10">
+        <p>© <span id="year"></span> Sujan Rimal | All rights reserved.</p>
+        <p>Built with Passion & Code</p>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>

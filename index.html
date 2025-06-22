@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sujan Rimal | Electrical Engineer & Adventurer</title>
+    <meta name="description" content="Portfolio of Sujan Rimal, an electrical engineer passionate about smart grids, renewable energy, and exploring Nepal." />
+    <meta name="keywords" content="Sujan Rimal, Electrical Engineer, Smart Grid, Renewable Energy, Nepal, Travel, syko, Sujan, Rimal, सुजन, सुजन रिमाल" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+    <link href="/dist/style.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Background Effects -->
+    <div class="aurora-background"><div></div><div></div><div></div></div>
+    <div id="mouse-glow"></div>
+
+    <!-- Navigation (Component) -->
+    <nav class="p-4 flex justify-between items-center border-b border-white/10 bg-gray-950/50 backdrop-blur-lg sticky top-0 z-50 h-16">
+        <a href="/" class="text-2xl font-extrabold text-cyan-400">⚡ Sujan Rimal</a>
+        <div class="md:hidden">
+            <button id="hamburger-btn" class="text-white focus:outline-none z-50 relative">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+            </button>
+        </div>
+        <ul class="hidden md:flex gap-6 text-sm font-medium">
+            <li><a href="/#home" class="text-cyan-400 font-bold">Home</a></li>
+            <li><a href="/about/" class="hover:text-cyan-300 transition-colors">About</a></li>
+            <li><a href="/skill/" class="hover:text-cyan-300 transition-colors">Skills</a></li>
+            <li><a href="/project/" class="hover:text-cyan-300 transition-colors">Projects</a></li>
+            <li><a href="/survey/" class="hover:text-cyan-300 transition-colors">Survey</a></li>
+            <li><a href="/blog/" class="hover:text-cyan-300 transition-colors">Blog</a></li>
+            <li><a href="/contact/" class="hover:text-cyan-300 transition-colors">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Mobile Menu (Component) -->
+    <div id="mobile-menu" class="hidden fixed inset-0 bg-black/90 backdrop-blur-md z-40 md:hidden">
+        <ul class="flex flex-col items-center justify-center h-full gap-8 text-xl font-medium">
+            <li><a href="/#home" class="mobile-link">Home</a></li>
+            <li><a href="/about/" class="mobile-link">About</a></li>
+            <li><a href="/skill/" class="mobile-link">Skills</a></li>
+            <li><a href="/project/" class="mobile-link">Projects</a></li>
+            <li><a href="/survey/" class="mobile-link">Survey</a></li>
+            <li><a href="/blog/" class="mobile-link">Blog</a></li>
+            <li><a href="/contact/" class="mobile-link">Contact</a></li>
+        </ul>
+    </div>
+    
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="min-h-screen flex items-center justify-center px-4 -mt-16">
+            <div class="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+                <div class="text-center md:text-left">
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black mb-4 leading-tight">
+                        <span class="animate-fade-in-up inline-block" style="animation-delay: 0.1s;">Hi, I'm</span>
+                        <span class="animate-fade-in-up inline-block bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500" style="animation-delay: 0.3s;">Sujan Rimal</span>
+                    </h1>
+                    <p class="animate-fade-in-up text-lg md:text-xl text-gray-300 mb-8" style="animation-delay: 0.5s;">
+                        An Electrical Engineer crafting the future of smart grids, renewable energy, and intuitive web experiences.
+                    </p>
+                    <div class="animate-fade-in-up flex flex-col sm:flex-row gap-4 justify-center md:justify-start" style="animation-delay: 0.7s;">
+                        <a href="/project/" class="px-8 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold rounded-full text-lg transition-transform duration-300 hover:scale-105 shadow-lg shadow-cyan-500/20">View My Work</a>
+                        <a href="/skill/" class="px-8 py-3 bg-white/10 border border-white/20 text-white font-bold rounded-full text-lg transition-colors duration-300 hover:bg-white/20">My Skills</a>
+                    </div>
+                </div>
+                <div class="animate-fade-in-up flex items-center justify-center w-80 h-80 md:w-96 md:h-96 mx-auto relative" style="animation-delay: 0.4s;">
+                    <div class="orbital-ring inset-0 border-2 border-cyan-400/20"></div>
+                    <div class="orbital-ring inset-8 border-t-2 border-t-cyan-400/80 border-l-2 border-l-cyan-400/80 border-b-2 border-b-transparent border-r-2 border-r-transparent" style="animation-duration: 15s; animation-direction: reverse;"></div>
+                    <div class="orbital-ring inset-16 border border-dashed border-white/20" style="animation-duration: 60s;"></div>
+                    <div class="w-64 h-64 lg:w-72 lg:h-72 z-10">
+                        <img src="/assets/images/sujan-photo.jpg" alt="Sujan Rimal Professional Photo" class="w-full h-full object-cover rounded-full shadow-2xl border-4 border-slate-700">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Summary -->
+        <section id="about" class="px-4 py-24 text-center">
+            <div class="max-w-4xl mx-auto animate-on-scroll">
+                <h2 class="text-4xl font-bold mb-6">About <span class="text-cyan-400">Me</span></h2>
+                <p class="text-gray-300 text-lg leading-relaxed">I'm passionate about energy and innovation. My focus is creating cleaner, smarter energy systems through design, automation, and AI. I mentor, lead, and believe in sharing knowledge in the open-source world.</p>
+                <a href="/about/" class="inline-block mt-8 px-6 py-2 border border-cyan-400 text-cyan-400 font-semibold rounded-full hover:bg-cyan-400 hover:text-black transition-colors">Learn More About My Journey</a>
+            </div>
+        </section>
+
+        <!-- Skills Summary -->
+        <section id="skills" class="px-4 py-24">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 animate-on-scroll">My <span class="text-cyan-400">Capabilities</span></h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Cards will animate on scroll -->
+                    <div class="bg-white/5 border border-white/10 rounded-xl p-6 backdrop-blur-md transition-all duration-300 hover:border-cyan-400/50 hover:-translate-y-2 animate-on-scroll"><h4 class="text-xl font-semibold mb-2 text-cyan-400">🔌 Electrical Installation</h4><p class="text-gray-400">Experienced in residential, commercial, and industrial electrical systems, ensuring safety and compliance.</p></div>
+                    <div class="bg-white/5 border border-white/10 rounded-xl p-6 backdrop-blur-md transition-all duration-300 hover:border-cyan-400/50 hover:-translate-y-2 animate-on-scroll" style="animation-delay: 0.1s;"><h4 class="text-xl font-semibold mb-2 text-cyan-400">🏭 Industrial Automation</h4><p class="text-gray-400">Hands-on experience with PLCs, motors, and control panels. Capable of reading and interpreting complex wiring diagrams.</p></div>
+                    <div class="bg-white/5 border border-white/10 rounded-xl p-6 backdrop-blur-md transition-all duration-300 hover:border-cyan-400/50 hover:-translate-y-2 animate-on-scroll" style="animation-delay: 0.2s;"><h4 class="text-xl font-semibold mb-2 text-cyan-400">🖊 AutoCAD & MATLAB</h4><p class="text-gray-400">Skilled in creating schematics with AutoCAD and using MATLAB for simulations and data analysis.</p></div>
+                </div>
+                 <div class="text-center mt-12 animate-on-scroll" style="animation-delay: 0.3s;">
+                    <a href="/skill/" class="px-8 py-3 bg-white/10 border border-white/20 text-white font-bold rounded-full text-lg transition-colors duration-300 hover:bg-white/20">View All Skills</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Adventures Section -->
+        <section id="adventures" class="px-4 py-24">
+             <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-6 animate-on-scroll">Beyond the <span class="text-cyan-400">Circuits</span></h2>
+                <p class="max-w-4xl mx-auto text-gray-300 text-lg leading-relaxed text-center mb-12 animate-on-scroll">While my professional world revolves around electrical systems, my heart belongs to the trails and temples of Nepal. Exploring my homeland inspires my work, reminding me of the human and natural worlds we build for.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white/5 border border-white/10 rounded-xl p-0 overflow-hidden backdrop-blur-md transition-all duration-300 hover:border-cyan-400/50 hover:-translate-y-2 group animate-on-scroll"><img src="https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?q=80&w=2070" alt="Himalayan mountain landscape" class="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-105"><div class="p-6"><h4 class="text-xl font-semibold mb-2 text-cyan-400">🏔️ Himalayan Treks</h4><p class="text-gray-400">Trekking teaches resilience and perspective—it's engineering on a personal scale.</p></div></div>
+                    <div class="bg-white/5 border border-white/10 rounded-xl p-0 overflow-hidden backdrop-blur-md transition-all duration-300 hover:border-cyan-400/50 hover:-translate-y-2 group animate-on-scroll" style="animation-delay: 0.15s;"><img src="https://images.unsplash.com/photo-1544439329-1c9293335bba?q=80&w=1974" alt="Ancient Nepalese temple architecture" class="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-105"><div class="p-6"><h4 class="text-xl font-semibold mb-2 text-cyan-400">🏛️ Cultural Immersion</h4><p class="text-gray-400">Exploring ancient cities is like studying a living schematic of history and belief.</p></div></div>
+                    <div class="bg-white/5 border border-white/10 rounded-xl p-0 overflow-hidden backdrop-blur-md transition-all duration-300 hover:border-cyan-400/50 hover:-translate-y-2 group animate-on-scroll" style="animation-delay: 0.3s;"><img src="https://images.unsplash.com/photo-1617464294404-377759178f21?q=80&w=2070" alt="Lush green valley with a river in Nepal" class="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-105"><div class="p-6"><h4 class="text-xl font-semibold mb-2 text-cyan-400">🌿 Natural Wonders</h4><p class="text-gray-400">Nature's powerful systems are a constant reminder of the sustainable solutions we must create.</p></div></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer (Component) -->
+    <footer class="text-center py-8 text-gray-500 text-sm mt-16 border-t border-white/10">
+        <p>© <span id="year"></span> Sujan Rimal | All rights reserved.</p>
+        <p>Built with Passion & Code</p>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
